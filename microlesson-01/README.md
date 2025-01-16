@@ -41,12 +41,12 @@
 
 By the end of this course, you will be able to:
 
-- **Explain** the role and importance of data management in AI projects, emphasizing its strategic necessity and impact on outcomes.
-- **Identify** key challenges in managing data for AI projects, including aspects like data volume, variety, velocity, quality, labeling, security, and versioning.
-- **Apply** strategies for data governance, quality management, security, and scalability by leveraging appropriate frameworks, processes, and techniques.
-- **Analyze** the stages of the data lifecycle, detailing considerations and best practices at each stage for effective data management.
-- **Compare and contrast** various data repositories (e.g., Data Warehouse, Data Lake, Data Mesh) to evaluate their architectures, use cases, benefits, and challenges.
-- **Propose** actionable improvements by integrating best practices for data management in AI projects, ensuring scalability, compliance, and efficiency.
+- Explain the role and importance of data management in AI projects, emphasizing its strategic necessity and impact on outcomes.
+- Identify key challenges in managing data for AI projects, including aspects like data volume, variety, velocity, quality, labeling, security, and versioning.
+- Apply strategies for data governance, quality management, security, and scalability by leveraging appropriate frameworks, processes, and techniques.
+- Analyze the stages of the data lifecycle, detailing considerations and best practices at each stage for effective data management.
+- Compare and contrast various data repositories (e.g., Data Warehouse, Data Lake, Data Mesh) to evaluate their architectures, use cases, benefits, and challenges.
+- Propose actionable improvements by integrating best practices for data management in AI projects, ensuring scalability, compliance, and efficiency.
 
 
 -----
