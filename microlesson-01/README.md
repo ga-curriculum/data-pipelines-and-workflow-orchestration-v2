@@ -41,13 +41,13 @@
 
 By the end of this course, you will be able to:
 
-  - ✅ Understand the fundamental concepts of data pipelines and workflow orchestration.
-  - ✅ Design data pipelines that are scalable, reliable, and maintainable.
-  - ✅ Implement data pipelines using industry-standard tools and technologies.
-  - ✅ Orchestrate complex workflows with tools like Apache Airflow, Prefect and others.
-  - ✅ Optimize data pipelines for performance and efficiency.
-  - ✅ Monitor and troubleshoot data pipelines effectively.
-  - ✅ Apply best practices for building and managing data pipelines.
+- **Analyze** the fundamental concepts of data pipelines and workflow orchestration.
+- **Design** data pipelines that are scalable, reliable, and maintainable.
+- **Implement** data pipelines using industry-standard tools and technologies.
+- **Orchestrate** complex workflows with tools like Apache Airflow, Prefect and others.
+- **Optimize** data pipelines for performance and efficiency.
+- **Monitor** and troubleshoot data pipelines effectively.
+- **Apply** best practices for building and managing data pipelines.
 
 -----
 
