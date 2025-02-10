@@ -1,65 +1,30 @@
 <h1>
   <span class="prefix"></span>
-  <span class="headline">[tktk Headline]</span>
+  <span class="headline">Data Pipelines and Workflow Orchestration</span>
 </h1>
 
 ## About
 
-tktk Write a short but descriptive summary of the content in this module.
+By the end of this lesson, you will be able to:
+
+  - **Analyze** the fundamental concepts of data pipelines and workflow orchestration.
+  - **Design** data pipelines that are scalable, reliable, and maintainable.
+  - **Implement** data pipelines using industry-standard tools and technologies.
+  - **Orchestrate** complex workflows with tools like Apache Airflow, Prefect and others.
+  - **Optimize** data pipelines for performance and efficiency.
+  - **Monitor** and troubleshoot data pipelines effectively.
+  - **Apply** best practices for building and managing data pipelines.
 
 ## Content
 
 | Lesson | Est. Delivery Time | Skills |
 | ------ |:------------------:| ------ |
-| [Setup](./setup/README.md)                          | -- | Set up the development environment. |
-| [Concepts](./concepts/README.md)                    | -- | tktk Skills to cover                |
-| [tktk Microlesson Name](./microlesson-01/README.md) | -- | tktk Skills to cover                |
-| [tktk Microlesson Name](./microlesson-02/README.md) | -- | tktk Skills to cover                |
-| **Total content**                                   | -- |                                     |
+| [Setup](./setup/README.md)                          | 2 min | Set up the development environment. |
+| [Introduction](./microlesson-01/README.md) | 5 min | Intro to data pipelines and workflow orchestrtion.              |
+| [Data Pipeline Fundamentals](./microlesson-02/README.md) | 15 min | Data pipeline fundamentals.              |
+| [Workflow Orchestration](./microlesson-03/README.md) | 20 min | Workflow orchestration tools for managing the complexity of data pipelines.|
+| [Implementing Data Pipelines](./microlesson-04/README.md) | 25 min | Practical aspects of implementing data pipelines.                |
+| [Optimizing Data Pipelines](./microlesson-05/README.md) | 15 min | Improving performance, reducing costs, and ensuring scalability through data pipeline optimization.             |
+| [Conclusion and Best Practices](./microlesson-06/README.md) | 5 min | Recap of key points.               |
+| **Total content**                                   | ~90 min |                                     |
 
-## References
-
-📖 [Reference Materials](./references/README.md)
-
-## Internal
-
-### Prerequisites
-
-- tktk
-- tktk
-- tktk
-
-### Starter code
-
-tktk If there is not a starter code repo that students will use to start this lesson, then this section and all of its content should be removed.
-
-🟢 [Starter code](https://git.generalassemb.ly/modular-curriculum-all-courses/tktk)
-
-### Solution code
-
-tktk If there is not solution code related to this module this section and all of its content should be removed.
-
-🏁 [Solution code](https://git.generalassemb.ly/modular-curriculum-all-courses/tktk)
-
-### Deployed site
-
-tktk If there is not a deployed site related to this module this section and all of its content should be removed.
-
-🌐 [Live site](https://generalassemb.ly/tktk)
-
-### Course landing pages
-
-- [tktk-course-acronym - tktk Course Full Name](https://pages.git.generalassemb.ly/modular-curriculum-all-courses/tktk-module-name/canvas-landing-pages/tktk-course-acronym.html)
-- [Fallback](https://pages.git.generalassemb.ly/modular-curriculum-all-courses/tktk-module-name/canvas-landing-pages/fallback.html)
-
-### Resources
-
-✏️ [Instructor Guide](./internal-resources/instructor-guide.md)
-
-🎥 [Video Hub](./internal-resources/video-hub.md)
-
-🏗️ [Release Notes](./internal-resources/release-notes.md)
-
----
-
-**Find a 👾 bug 👾 or have suggestions? [Let us know](https://pages.git.generalassemb.ly/modular-curriculum-all-courses/universal-resources-internal/module-feedback.html)!**
