@@ -9,7 +9,7 @@ A **data pipeline** is a sequence of interconnected processing steps that transf
 
 **Key Components:**
 
-Here's a Mermaid diagram illustrating the key components of a data pipeline:
+Here's a diagram illustrating the key components of a data pipeline:
 
 <div class="mermaid">
 graph LR

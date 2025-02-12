@@ -18,7 +18,7 @@ Workflow orchestration tools are essential for managing the complexity of data p
 -   🚀 **Executor:** Responsible for running the tasks, either locally or on a distributed cluster.
 -   📋 **Metadata Store:** A database that stores information about workflows, tasks, and their execution history.
 
-Here's a Mermaid diagram illustrating a simple workflow as a DAG:
+Here's a diagram illustrating a simple workflow as a DAG:
 
 <div class="mermaid">
 graph LR
