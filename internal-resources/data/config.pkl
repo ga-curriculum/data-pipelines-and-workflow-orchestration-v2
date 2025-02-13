@@ -25,7 +25,6 @@ courses {
     microlessons {
       // Add microlessons here, in the order they should be delivered
       mls.setup
-      mls.concepts
       mls.microlesson01
       mls.microlesson02
       mls.microlesson03
