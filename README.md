@@ -24,4 +24,3 @@ By the end of this lesson, you will be able to:
 | [**Optimization & Troubleshooting**](./microlesson-03/README.md) | 30 min | Performance tuning, debugging, and error handling. |
 | [**Recap & Preparing for Apache Airflow**](./microlesson-04/README.md) | 10 min | Key takeaways and next steps for building pipelines from scratch. |
 | **Total Content** | ~90 min | Hands-on, practical application-focused learning. |
-

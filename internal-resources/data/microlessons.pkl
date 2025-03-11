@@ -5,7 +5,7 @@ import "https://pages.git.generalassemb.ly/modular-curriculum-all-courses/univer
 setup = new Template.Microlesson {
   friendlyName = "Setup"
   dirName = "setup"
-  type = "Content"
+  type = "Setup"
   videoUrl = ""
 }
 
@@ -17,36 +17,22 @@ microlesson01 = new Template.Microlesson {
 }
 
 microlesson02 = new Template.Microlesson {
-  friendlyName = "Data Pipeline Fundamentals"
+  friendlyName = "Hands-On: Running a Data Pipeline"
   dirName = "microlesson-02"
   type = "Content"
   videoUrl = ""
 }
 
 microlesson03 = new Template.Microlesson {
-  friendlyName = "Workflow Orchestration"
+  friendlyName = "Optimization & Troubleshooting"
   dirName = "microlesson-03"
   type = "Content"
   videoUrl = ""
 }
 
 microlesson04 = new Template.Microlesson {
-  friendlyName = "Implementing Data Pipelines"
+  friendlyName = "Recap & Preparing for Apache Airflow"
   dirName = "microlesson-04"
-  type = "Content"
-  videoUrl = ""
-}
-
-microlesson05 = new Template.Microlesson {
-  friendlyName = "Optimizing Data Pipelines"
-  dirName = "microlesson-05"
-  type = "Content"
-  videoUrl = ""
-}
-
-microlesson06 = new Template.Microlesson {
-  friendlyName = "Conclusion and Best Practices"
-  dirName = "microlesson-06"
   type = "Content"
   videoUrl = ""
 }

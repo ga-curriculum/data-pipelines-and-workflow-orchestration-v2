@@ -1,116 +1,97 @@
 {
     "org": {
-        "friendlyName": "Modular Curriculum All Courses",
-        "name": "modular-curriculum-all-courses"
+      "friendlyName": "Modular Curriculum All Courses",
+      "name": "modular-curriculum-all-courses"
     },
     "repo": {
-        "friendlyName": "Data Pipelines and Workflow Orchestration",
-        "name": "data-pipelines-and-workflow-orchestration",
-        "type": "Lesson",
-        "about": "",
-        "starterCode": "",
-        "solutionCode": "",
-        "deployedSite": ""
+      "friendlyName": "Data Pipelines and Workflow Orchestration",
+      "name": "data-pipelines-and-workflow-orchestration",
+      "type": "Lesson",
+      "about": "",
+      "starterCode": "",
+      "solutionCode": "",
+      "deployedSite": ""
     },
     "courses": [
-        {
-            "name": "fallback",
-            "courseAcronym": "",
-            "courseFullName": "",
-            "logoUrl": "",
-            "microlessons": [
-                {
-                    "friendlyName": "Setup",
-                    "dirName": "setup",
-                    "type": "Content",
-                    "skill": "",
-                    "learningObjective": "",
-                    "videoUrl": "",
-                    "videoLengthInMinutes": 0,
-                    "estimatedDeliveryTimeInMinutes": 2
-                },
-                {
-                    "friendlyName": "Introduction",
-                    "dirName": "microlesson-01",
-                    "type": "Content",
-                    "skill": "",
-                    "learningObjective": "",
-                    "videoUrl": "",
-                    "videoLengthInMinutes": 0,
-                    "estimatedDeliveryTimeInMinutes": 5
-                },
-                {
-                    "friendlyName": "Data Pipeline Fundamentals",
-                    "dirName": "microlesson-02",
-                    "type": "Content",
-                    "skill": "",
-                    "learningObjective": "",
-                    "videoUrl": "",
-                    "videoLengthInMinutes": 0,
-                    "estimatedDeliveryTimeInMinutes": 15
-                },
-                {
-                    "friendlyName": "Workflow Orchestration",
-                    "dirName": "microlesson-03",
-                    "type": "Content",
-                    "skill": "",
-                    "learningObjective": "",
-                    "videoUrl": "",
-                    "videoLengthInMinutes": 0,
-                    "estimatedDeliveryTimeInMinutes": 20
-                },
-                {
-                    "friendlyName": "Implementing Data Pipelines",
-                    "dirName": "microlesson-04",
-                    "type": "Content",
-                    "skill": "",
-                    "learningObjective": "",
-                    "videoUrl": "",
-                    "videoLengthInMinutes": 0,
-                    "estimatedDeliveryTimeInMinutes": 25
-                },
-                {
-                    "friendlyName": "Optimizing Data Pipelines",
-                    "dirName": "microlesson-05",
-                    "type": "Content",
-                    "skill": "",
-                    "learningObjective": "",
-                    "videoUrl": "",
-                    "videoLengthInMinutes": 0,
-                    "estimatedDeliveryTimeInMinutes": 15
-                },
-                {
-                    "friendlyName": "Conclusion and Best Practices",
-                    "dirName": "microlesson-06",
-                    "type": "Content",
-                    "skill": "",
-                    "learningObjective": "",
-                    "videoUrl": "",
-                    "videoLengthInMinutes": 0,
-                    "estimatedDeliveryTimeInMinutes": 5
-                }
-            ],
-            "isHeaderShown": true,
-            "isHeaderModuleNavShown": true,
-            "isHeaderHomeNavShown": true,
-            "isHeaderMicrolessonNavShown": true,
-            "isHeaderMicrolessonVideoLinkShown": true,
-            "isHeaderNavSettingsShown": true,
-            "isFooterCopyrightShown": true,
-            "isFooterLessonNavShown": true,
-            "isStickyNavSettingShown": true,
-            "isStickyNavAllowed": true,
-            "isFixedNavAllowed": true,
-            "isStickyNavDefault": true,
-            "isStickyNavForcedDefault": false,
-            "isFixedNavForcedDefault": false,
-            "isDarkModeSettingShown": true,
-            "isDarkModeAllowed": true,
-            "isLightModeAllowed": true,
-            "isLightModeDefault": true,
-            "isLightModeForcedDefault": false,
-            "isDarkModeForcedDefault": false,
-            "isActivityTimeShown": true
-        }
+      {
+        "name": "fallback",
+        "courseAcronym": "",
+        "courseFullName": "",
+        "logoUrl": "",
+        "microlessons": [
+          {
+            "friendlyName": "Setup",
+            "dirName": "setup",
+            "type": "Setup",
+            "skill": "",
+            "learningObjective": "",
+            "videoUrl": "",
+            "videoLengthInMinutes": 0,
+            "estimatedDeliveryTimeInMinutes": 2
+          },
+          {
+            "friendlyName": "Introduction",
+            "dirName": "microlesson-01",
+            "type": "Content",
+            "skill": "",
+            "learningObjective": "",
+            "videoUrl": "",
+            "videoLengthInMinutes": 0,
+            "estimatedDeliveryTimeInMinutes": 5
+          },
+          {
+            "friendlyName": "Hands-On: Running a Data Pipeline",
+            "dirName": "microlesson-02",
+            "type": "Content",
+            "skill": "",
+            "learningObjective": "",
+            "videoUrl": "",
+            "videoLengthInMinutes": 0,
+            "estimatedDeliveryTimeInMinutes": 40
+          },
+          {
+            "friendlyName": "Optimization & Troubleshooting",
+            "dirName": "microlesson-03",
+            "type": "Content",
+            "skill": "",
+            "learningObjective": "",
+            "videoUrl": "",
+            "videoLengthInMinutes": 0,
+            "estimatedDeliveryTimeInMinutes": 30
+          },
+          {
+            "friendlyName": "Recap & Preparing for Apache Airflow",
+            "dirName": "microlesson-04",
+            "type": "Content",
+            "skill": "",
+            "learningObjective": "",
+            "videoUrl": "",
+            "videoLengthInMinutes": 0,
+            "estimatedDeliveryTimeInMinutes": 10
+          }
+        ],
+        "isHeaderShown": true,
+        "isHeaderModuleNavShown": true,
+        "isHeaderHomeNavShown": true,
+        "isHeaderMicrolessonNavShown": true,
+        "isHeaderMicrolessonVideoLinkShown": true,
+        "isHeaderNavSettingsShown": true,
+        "isFooterCopyrightShown": true,
+        "isFooterLessonNavShown": true,
+        "isStickyNavSettingShown": true,
+        "isStickyNavAllowed": true,
+        "isFixedNavAllowed": true,
+        "isStickyNavDefault": true,
+        "isStickyNavForcedDefault": false,
+        "isFixedNavForcedDefault": false,
+        "isDarkModeSettingShown": true,
+        "isDarkModeAllowed": true,
+        "isLightModeAllowed": true,
+        "isLightModeDefault": true,
+        "isLightModeForcedDefault": false,
+        "isDarkModeForcedDefault": false,
+        "isActivityTimeShown": true
+      }
     ]
-}
+  }
+  
