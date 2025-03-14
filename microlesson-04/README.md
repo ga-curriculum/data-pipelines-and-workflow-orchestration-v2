@@ -43,21 +43,21 @@ with DAG('simple_dag', default_args=default_args, schedule_interval='@daily') as
 
     task_a >> task_b  # Defines dependency
 ```
-✅ **Try running this DAG and modifying dependencies!**
+**Try running this DAG and modifying dependencies!**
 
 #### **2️. Task Scheduling**
-❓ ***Challenge**: "If a data pipeline should run at 3 AM daily, how would you configure it?"*  
+***Challenge**: "If a data pipeline should run at 3 AM daily, how would you configure it?"*  
 
-✅ **Example: Set up a DAG to run daily at 3 AM**
+**Example: Set up a DAG to run daily at 3 AM**
 ```python
 with DAG('scheduled_dag', default_args=default_args, schedule_interval='0 3 * * *') as dag:
     start = DummyOperator(task_id='start')
 ```
 
 #### **3️. Task Failures & Retries**
-❓ ***Challenge**: "What happens if a task fails? How can you retry it automatically?"*  
+***Challenge**: "What happens if a task fails? How can you retry it automatically?"*  
 
-✅ **Example: Configuring retries**
+**Example: Configuring retries**
 ```python
 from airflow.operators.python_operator import PythonOperator
 import random
@@ -70,11 +70,11 @@ def unstable_task():
 with DAG('retry_dag', default_args={'retries': 3}, schedule_interval='@daily') as dag:
     task = PythonOperator(task_id='unstable_task', python_callable=unstable_task)
 ```
-✅ **Try modifying retry settings to observe behavior!**
+**Try modifying retry settings to observe behavior!**
 
 ## **Preparing for the Apache Airflow Lab**
 In the next session, you will **build your own data pipeline from scratch** using Apache Airflow.
 
 ## **Next Steps**
-🔗 **Review Airflow Documentation:** [Apache Airflow Docs](https://airflow.apache.org/docs/)  
+**Review Airflow Documentation:** [Apache Airflow Docs](https://airflow.apache.org/docs/)  
 
