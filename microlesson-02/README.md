@@ -20,7 +20,7 @@ pip install pandas pyarrow apache-airflow
 ### 2️. Dataset Download
 Download the sample **NYC Taxi Data** CSV file:
 ```bash
-wget https://data.cityofnewyork.us/api/views/2upf-qytp/rows.csv?accessType=DOWNLOAD -O nyc_taxi_data.csv
+wget “https://data.cityofnewyork.us/resource/m6nq-qud6.csv” -O nyc_taxi_data.csv
 ```
 
 ## **Step 1: Extract Data**
@@ -35,20 +35,20 @@ df = pd.read_csv(file_path)
 # Display first few rows
 df.head()
 ```
-✅ **Check:** Do you see columns like `pickup_datetime`, `dropoff_datetime`, `trip_distance`, `fare_amount`?
+✅ **Check:** Do you see columns like `tpep_pickup_datetime`, `tpep_dropoff_datetime`, `trip_distance`, `fare_amount`?
 
 ## **Step 2: Transform Data**
 Perform cleaning and transformation tasks:
 ```python
 # Convert timestamps to datetime format
-df['pickup_datetime'] = pd.to_datetime(df['pickup_datetime'])
-df['dropoff_datetime'] = pd.to_datetime(df['dropoff_datetime'])
+df['tpep_pickup_datetime'] = pd.to_datetime(df['tpep_pickup_datetime'])
+df['tpep_dropoff_datetime'] = pd.to_datetime(df['tpep_dropoff_datetime'])
 
 # Filter out trips with zero or negative fares
 df = df[df['fare_amount'] > 0]
 
 # Calculate trip duration
-df['trip_duration'] = (df['dropoff_datetime'] - df['pickup_datetime']).dt.total_seconds()
+df['trip_duration'] = (df['tpep_dropoff_datetime'] - df['tpep_pickup_datetime']).dt.total_seconds()
 ```
 ✅ **Check:** Run `df.info()` to ensure data types are correct.
 
@@ -83,7 +83,7 @@ def extract():
 
 def transform():
     df = pd.read_csv("extracted.csv")
-    df['pickup_datetime'] = pd.to_datetime(df['pickup_datetime'])
+    df['tpep_pickup_datetime'] = pd.to_datetime(df['tpep_pickup_datetime'])
     df = df[df['fare_amount'] > 0]
     df.to_csv("transformed.csv", index=False)
 
