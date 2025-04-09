@@ -11,7 +11,7 @@ By the end of this exercise, you will:
 
 
 ## **Setup Instructions**
-### 1️. Environment Preparation
+### 1️. Create a new notebook on Jupyter
 Ensure you have the following Python libraries installed:
 ```bash
 pip install pandas pyarrow apache-airflow
@@ -20,7 +20,7 @@ pip install pandas pyarrow apache-airflow
 ### 2️. Dataset Download
 Download the sample **NYC Taxi Data** CSV file:
 ```bash
-wget “https://data.cityofnewyork.us/resource/m6nq-qud6.csv” -O nyc_taxi_data.csv
+!wget "https://data.cityofnewyork.us/resource/m6nq-qud6.csv" -O nyc_taxi_data.csv
 ```
 
 ## **Step 1: Extract Data**
