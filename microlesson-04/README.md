@@ -25,6 +25,18 @@ Over the past lessons, you have learned how to:
 ## **Engaging Introduction to Apache Airflow**
 Before jumping into the lab, let’s get hands-on with **some examples** that introduce core Apache Airflow concepts. 
 
+> **⚠️ Important Educational Note:** The code examples below demonstrate Airflow concepts and syntax for educational purposes. **Running these examples in Jupyter notebook cells will not create actual DAGs in the Airflow web UI** because:
+> - Jupyter executes code in memory only
+> - Airflow requires DAG definitions to be saved as `.py` files in `~/airflow/dags/`
+> - Airflow must be properly installed and running (`airflow standalone`) to discover and execute DAGs
+> - These examples are conceptual demonstrations to help you understand Airflow's core concepts before the hands-on lab
+> 
+> **To actually work with these DAGs:**
+> 1. Save each example as a separate `.py` file in `~/airflow/dags/`
+> 2. Ensure Airflow is running with `airflow standalone`
+> 3. Check `http://127.0.0.1:8080` to see the DAGs appear
+> 4. Unpause and trigger DAGs from the web UI
+
 ### **Instructor-Guided Mini-Challenges**
 
 #### **1️. DAGs & Task Dependencies**
