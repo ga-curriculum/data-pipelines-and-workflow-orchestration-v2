@@ -122,7 +122,15 @@ load_task = PythonOperator(task_id='load', python_callable=load, dag=define_dag)
 
 extract_task >> transform_task >> load_task
 ```
-✅ **Check:** This creates an Airflow DAG that automates the ETL process.
+**⚠️ Important Note:** Running this code in a Jupyter notebook cell will execute the Python code but **will not** create the DAG in the Airflow web UI at `http://127.0.0.1:8080/home`. This is because:
+- Jupyter notebook cells only execute code in memory
+- Airflow needs the DAG definition saved as a `.py` file in the `~/airflow/dags/` directory to discover and display it
+- The DAG file must be properly saved to disk for Airflow's scheduler to find it
+ 
+To actually create the DAG in Airflow:
+1. Save the code above as a file: `~/airflow/dags/nyc_taxi_pipeline.py`
+2. Ensure Airflow is running with `airflow standalone`
+3. The DAG should appear in the Airflow web UI after a few moments
 
 
 ## **Wrap-Up**
@@ -130,7 +138,7 @@ extract_task >> transform_task >> load_task
 - Extracted data from a real-world dataset.
 - Cleaned and transformed data using Pandas.
 - Stored and managed the dataset.
-- Automated the process using Apache Airflow.
+- Automated the process using Apache Airflow (but not pushing it yet)
 
 
 
