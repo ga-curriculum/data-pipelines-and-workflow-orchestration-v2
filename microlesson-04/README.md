@@ -5,12 +5,12 @@
 
 ## **Lesson Recap**
 Over the past lessons, you have learned how to:
-- **Design and implement** a data pipeline using real-world data.
+- **Design and implement** end-to-end data pipeline using real-world data.
 - **Optimize and troubleshoot** pipeline performance and failures.
 - **Automate ETL workflows** with best practices for data orchestration.
 
 ### **Key Takeaways**
-✅ **Data Pipelines** ensure efficient data movement and transformation.  
+✅ **Data Pipelines** enable reliable data movement and transformation.  
 ✅ **Optimization Techniques** improve performance and scalability.  
 ✅ **Troubleshooting Skills** help identify and fix failures effectively.  
 ✅ **Workflow Orchestration** streamlines execution and scheduling.  
@@ -85,7 +85,7 @@ with DAG('retry_dag', default_args={'retries': 3}, schedule_interval='@daily') a
 **Try modifying retry settings to observe behavior!**
 
 ## **Preparing for the Apache Airflow Lab**
-In the next session, you will **build your own data pipeline from scratch** using Apache Airflow.
+In the next session, you will **build a complete data pipeline from scratch** using Apache Airflow.
 
 ## **Next Steps**
 **Review Airflow Documentation:** [Apache Airflow Docs](https://airflow.apache.org/docs/)  
