@@ -3,16 +3,16 @@
   <span class="headline">Data Pipelines and Workflow Orchestration</span>
 </h1>
 
-## About
+## Learning Objectives
 
 By the end of this lesson, you will be able to:
 
-- **Analyze** the fundamental concepts of data pipelines and workflow orchestration.
+- **Explain** the core concepts of data pipelines and workflow orchestration.
 - **Design** scalable, reliable, and maintainable data pipelines.
-- **Implement** an ETL pipeline using a pre-built dataset (NYC Taxi Data).
+- **Implement** an end-to-end ETL pipeline using a pre-built dataset (NYC Taxi Data).
 - **Orchestrate** workflows and manage dependencies effectively.
-- **Optimize** and troubleshoot data pipelines for performance and efficiency.
-- **Apply** best practices for building and managing data pipelines.
+- **Diagnose and optimize** data pipelines for performance and efficiency.
+- **Apply** industry best practices for building and managing data pipelines.
 
 ## Content
 
