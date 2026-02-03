@@ -43,7 +43,7 @@ df['fare_with_tax'] = df['fare_amount'].apply(lambda x: x * 1.08)
 ```python
 df['fare_with_tax'] = df['fare_amount'] * 1.08
 ```
-**Outcome:** **10-100x faster** by leveraging Pandas’ internal optimizations.
+**Outcome:** Achieves **10-100x faster** by leveraging Pandas’ internal optimizations.
 
 ## **Troubleshooting Common Pipeline Failures**
 ### **Example 3: Handling Missing Data**
@@ -82,8 +82,8 @@ def transform(df):
 
 
 ## **Wrap-Up & Next Steps**
-**You have learned:**
-- How to optimize data loading, transformation, and processing.
-- Common debugging techniques for troubleshooting pipelines.
-- Logging and error handling best practices.
+**You have learned how to:**
+- Optimize data loading, transformation, and processing.
+- Identify and resolve common debugging techniques for troubleshooting pipelines.
+- Apply logging and error handling best practices.
  
