@@ -8,6 +8,7 @@ By the end of this exercise, you will:
 - Load, transform, and analyze NYC Taxi dataset using Python.
 - Understand ETL (Extract, Transform, Load) processes in a data pipeline.
 - Identify common data pipeline errors and troubleshoot them.
+- Recognize how a pipeline's Load step changes when the destination is a vector database for AI use cases.
 
 
 ## **Setup Instructions**
@@ -68,6 +69,87 @@ df.to_csv("nyc_taxi_cleaned.csv", index=False)
 | `ParserError` when loading CSV | Incorrect file path or format | Verify file name & use `pd.read_csv('file.csv', error_bad_lines=False)` |
 | `NaT` values in datetime columns | Invalid data format | Use `pd.to_datetime(df['column'], errors='coerce')` |
 | Negative trip durations | Incorrect data entries | Filter out invalid durations with `df[df['trip_duration'] > 0]` |
+
+## **Extending the Load Step: When Your Pipeline Feeds an AI System**
+
+In the steps above, the cleaned data is loaded into a CSV — a common destination for BI reporting and structured analytics. But when the downstream consumer is an **AI system** (a chatbot, a recommendation engine, or an agentic workflow), the load target changes.
+
+Instead of writing rows to a database table, you **embed** the data and write vectors to a **vector database**. This makes the data queryable by *meaning* rather than by exact value — which is what RAG pipelines and AI agents need.
+
+### **How the Pipeline Changes**
+
+A standard ETL pipeline:
+
+```
+Extract → Transform → Load (CSV / Database)
+```
+
+An AI-ready pipeline adds an embedding step:
+
+```
+Extract → Transform → Embed → Load (Vector Database)
+```
+
+### **Conceptual Example: Extending the NYC Taxi Pipeline for AI**
+
+Imagine the taxi company wants to build a natural-language assistant that answers questions like *"What routes have the highest fares in bad weather?"* To support that, the transformed data needs to be embedded and stored in a vector database.
+
+```python
+# pip install chromadb sentence-transformers
+import pandas as pd
+from sentence_transformers import SentenceTransformer
+import chromadb
+
+# Load the transformed dataset
+df = pd.read_csv("nyc_taxi_cleaned.csv").head(100)  # Use a sample for demonstration
+
+# Create text summaries that can be meaningfully embedded
+df['summary'] = (
+    "Trip from zone " + df['PULocationID'].astype(str) +
+    " to zone " + df['DOLocationID'].astype(str) +
+    ", fare: $" + df['fare_amount'].astype(str) +
+    ", duration: " + df['trip_duration'].astype(str) + " seconds"
+)
+
+# Embed: convert each text summary into a numeric vector
+model = SentenceTransformer('all-MiniLM-L6-v2')
+embeddings = model.encode(df['summary'].tolist())
+
+# Load: store vectors in a local Chroma vector database
+client = chromadb.Client()
+collection = client.create_collection("nyc_taxi_trips")
+
+collection.add(
+    documents=df['summary'].tolist(),
+    embeddings=embeddings.tolist(),
+    ids=[str(i) for i in df.index]
+)
+
+# Query: retrieve the most semantically relevant trips
+results = collection.query(
+    query_texts=["long trips with high fares"],
+    n_results=3
+)
+print(results['documents'])
+```
+
+> **Note:** This example is for conceptual demonstration. You do not need to run it during this lesson. The goal is to see how a pipeline's Load step changes shape when the destination is a vector store rather than a structured file or database.
+
+### **What's different about this pipeline?**
+
+| Stage | Traditional ETL | AI-Ready ETL |
+|---|---|---|
+| **Extract** | Read from source | Same |
+| **Transform** | Clean, filter, reshape | Same + create text summaries |
+| **Embed** | *(not present)* | Convert text to vectors |
+| **Load** | Write to CSV / SQL | Write to vector database |
+| **Query** | SQL SELECT | Semantic similarity search |
+
+### **Connecting to data management and Day 5**
+
+This pattern — **Extract → Transform → Embed → Load** — is the foundation of every RAG pipeline and AI agent memory system you'll encounter. The vector database covered in the *Data Repositories* lesson (FAISS, Chroma, Weaviate, Pinecone) is always the Load target in this pattern. In Day 5, you'll see how agentic workflows query these vector stores at runtime to retrieve relevant context before generating a response.
+
+---
 
 ## **Step 5: Automate with Apache Airflow**
 Apache Airflow helps automate ETL workflows. It's a platform that programmatically authors, schedules, and monitors data pipelines, making them more maintainable, reliable, and scalable.
